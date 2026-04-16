@@ -2,3 +2,41 @@
   background: url(./assets/aa.jpg) no-repeat center;
   background-size: cover;
 }
+
+/* phone layout */
+.phone {
+  background: url(./assets/aa.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* homescreen */
+.slider {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(rgb(46, 165, 184), rgb(0, 61, 166));
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(rgb(225, 56, 56), rgb(46, 165, 184));
+}
