@@ -9,6 +9,10 @@
   background-size: cover;
 }
 
+.phone::-webkit-scrollbar {
+  display: none;
+}
+
 /* homescreen */
 .slider {
   width: 100%;
