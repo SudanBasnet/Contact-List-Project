@@ -20,6 +20,13 @@ const dispAppScreen = () => {
   //show app screen
   document.querySelector(".appScreen").style.display = "block";
 };
+const dispContactScreen = () => {
+  //hide app screen
+  document.querySelector(".appScreen").remove();
+  //show contactlist screen
+  document.querySelector(".contactListScreen").style.display = "block";
+  fetchUsers(apiEP);
+};
 
 const fetchUsers = async (url) => {
   //fetch users
@@ -45,8 +52,6 @@ const fetchUsers = async (url) => {
   //show the user
   displayContactList(userList);
 };
-
-fetchUsers(apiEP);
 
 //display contact list
 
@@ -131,6 +136,6 @@ document.getElementById("search").addEventListener("keyup", (e) => {
     const name = (item.name.first + " " + item.name.last).toLowerCase();
     return name.includes(value.toLowerCase());
   });
-  console.log(filteredUsers);
+
   displayContactList(filteredUsers);
 });
