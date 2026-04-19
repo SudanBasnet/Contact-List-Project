@@ -119,6 +119,7 @@ const displayContactList = (userList) => {
                   </div>`;
   });
   document.getElementById("useraccordion").innerHTML = str;
+  document.getElementById("userCount").innerText = userList.length;
 };
 
 //search contact
