@@ -51,7 +51,6 @@ fetchUsers(apiEP);
 //display contact list
 
 const displayContactList = (userList) => {
-  console.log(userList);
   document.getElementById("list").style.display = "block";
   let str = "";
   userList.map((item, i) => {
@@ -121,3 +120,16 @@ const displayContactList = (userList) => {
   });
   document.getElementById("useraccordion").innerHTML = str;
 };
+
+//search contact
+
+document.getElementById("search").addEventListener("keyup", (e) => {
+  const { value } = e.target;
+  console.log(value);
+  const filteredUsers = userList.filter((item) => {
+    const name = (item.name.first + " " + item.name.last).toLowerCase();
+    return name.includes(value.toLowerCase());
+  });
+  console.log(filteredUsers);
+  displayContactList(filteredUsers);
+});
