@@ -100,11 +100,11 @@
             </div>
             <!-- contactlist -->
             <div id="list" class="bg-light pt-2">
-              <div class="">
+              <div class="p-2">
                 <span id="userCount">10</span>
                 <span>Contacts</span>
                 Accordion
-                <div class="accordion" id="accordionExample">
+                <div class="accordion mt-2" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
@@ -115,7 +115,16 @@
                         aria-expanded="false"
                         aria-controls="collapseThree"
                       >
-                        Accordion Item #3
+                        <img
+                          src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+                          alt=""
+                          width="50px"
+                          class="rounded-circle"
+                        />
+                        <div class="ms-2">
+                          <div class="fw-bolder">Sudan Basnet</div>
+                          <small>5 Railway pde, hustville</small>
+                        </div>
                       </button>
                     </h2>
                     <div
@@ -123,19 +132,38 @@
                       class="accordion-collapse collapse"
                       data-bs-parent="#accordionExample"
                     >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item’s accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It’s also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                      <div
+                        class="accordion-body d-flex flex-column align-items-center"
+                      >
+                        <img
+                          src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+                          alt=""
+                          width="150px"
+                          class="rounded-circle"
+                        />
+                        <div>
+                          <div class="fw-bolder">
+                            <i class="bi bi-person-circle"></i> Sudan Basnet
+                          </div>
+                          <div>
+                            <a href="tel:123456789"
+                              ><i class="bi bi-phone-fill"></i>123456789</a
+                            >
+                          </div>
+                          <div>
+                            <a href="mailto:abc@gmail.com">
+                              <i class="bi bi-envelope"></i> abc@gmail.com</a
+                            >
+                          </div>
+                          <div>
+                            <a
+                              href="https://www.google.com/maps/place/5+Railway+Parade,+Hurstville+NSW+2220"
+                              target="_blank"
+                              ><i class="bi bi-globe-asia-australia-fill"></i> 5
+                              railway pde, Australia</a
+                            >
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
